@@ -23,9 +23,6 @@ fi
 
 if [[ $NAME ]]; then
   sed -i -e "s/name=.*/name=${NAME}/" /etc/runscope-radar/radar.conf
-else
-  echo "NAME environment variable required"
-  exit 1
 fi
 
 if [[ $TIMEOUT ]]; then
