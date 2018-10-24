@@ -1,0 +1,9 @@
+api-host=https://api.runscope.com
+threads=3
+timeout=20
+disconnect-timeout=5
+cafile=
+name=cloudops-runscope-agent
+token=
+agent-id=
+team-id=
