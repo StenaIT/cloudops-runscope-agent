@@ -37,4 +37,8 @@ if [[ $THREADS ]]; then
   sed -i -e "s/threads=.*/threads=${THREADS}/" /etc/runscope-radar/radar.conf
 fi
 
+if [[ $CA_FILE ]]; then
+  sed -i -e "s/cafile=.*/cafile=${CA_FILE}/" /etc/runscope-radar/radar.conf
+fi
+
 exec /usr/local/bin/runscope-radar -f /etc/runscope-radar/radar.conf

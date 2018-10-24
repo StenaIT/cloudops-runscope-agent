@@ -8,10 +8,15 @@ See the documentation for runscope agent for information on how to get the requi
 
 Environment Variable | Description                    | Default
 ---------------------|--------------------------------|------------------------
-NAME                 | The name of the runscope agent | cloudops-runscope-agent
 TOKEN                | The runscope agent token       | -
 AGENT_ID             | The runscope agent id          | -
 TEAM_ID              | The runscope team id           | -
+NAME                 | The name of the runscope agent | cloudops-runscope-agent
+TIMEOUT              | Connection idle timeout        | 20
+DISCONNECT_TIMEOUT   | Disconnect timeout             | 5
+THREADS              | Number of worker threads       | 3
+CA_FILE              | CA certificate file            | -
+
 
 ## Using the docker image
 
